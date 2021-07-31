@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { buscarCiudad } from '../../actions'
 import { useDispatch } from 'react-redux'
+import { SerchCont, Input } from './styles'
 
 const SearchBar = () => {
 
@@ -13,16 +14,15 @@ const SearchBar = () => {
       asignarCiudad('')
   }
   return (
-    <form id='searchBar' onSubmit={ e => handleSubmit(e) } >
-      <input
-        id='inputText'
+    <SerchCont onSubmit={ e => handleSubmit(e) } >
+      <Input        
         type="text"
-        placeholder="Name of city..."
+        placeholder="Type name of city..."
         value={ciudad}
         onChange={e => asignarCiudad(e.target.value)}
       />
-      <input id='boton' type="submit" value="Search" />
-    </form>
+      <Input type="submit" value="Search" className='inputButton' />
+    </SerchCont>
   )
 }
 
