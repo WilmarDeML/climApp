@@ -5,7 +5,7 @@ import { deleteCity } from '../../actions'
 import { CityStyle, HeadCity, BodyStyle } from './styles'
 import Delete from '../../images/delete.png'
 
-const City = ({ city, cities }) => {   
+const City = ({ city }) => {   
 
   const dispatch = useDispatch()
 
@@ -16,7 +16,7 @@ const City = ({ city, cities }) => {
   return (
     <CityStyle>
         <HeadCity>
-          <Link to={`/ciudad/${city.id}`} className='link'>
+          <Link to={`/city/${city.id}`} className='link'>
             <h2>{city.name} ({city.sys.country})</h2>
           </Link>
           <button onClick={() => handleOnclick(city.id)} >
