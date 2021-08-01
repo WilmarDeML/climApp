@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { CitiesStyle } from './styles'
 
 const Cities = () => {
-    const cities = useSelector(state => state.listCities)
+  const cities = useSelector(state => state.listCities)
   if(cities.length){
     return (
       <CitiesStyle>
@@ -13,7 +13,6 @@ const Cities = () => {
             <City
                 key={city.id}
                 city={city}
-                cities={cities}
             />
           )
         }
