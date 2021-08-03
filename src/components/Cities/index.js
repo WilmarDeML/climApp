@@ -2,6 +2,7 @@ import React from 'react'
 import City from '../City'
 import { useSelector } from 'react-redux'
 import { CitiesStyle } from './styles'
+import Landing from '../Landing'
 
 const Cities = () => {
   const cities = useSelector(state => state.listCities)
@@ -19,7 +20,7 @@ const Cities = () => {
       </CitiesStyle>
     )
   } else {
-    return <h2><em>Without Cities!</em></h2>
+    return <Landing />
   }
 }
 
