@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import celsius from '../../images/celsius.png'
 import mph from '../../images/mph.png'
 import back from '../../images/back.png'
+import porcentaje from '../../images/porcentaje.png'
 import { DetailCont, Coordinates, Main, MainItems, MinMaxTemp, WindCont } from './styles'
 
 const  CityDetail = ({ match, history }) => {
@@ -32,7 +33,7 @@ const  CityDetail = ({ match, history }) => {
                 <MainItems>
                     <h3>Main</h3>
                     <label>Pressure {city.main.pressure} hPa</label>
-                    <label>Humidity {city.main.humidity}%</label>
+                    <label>Humidity {city.main.humidity} <img src={porcentaje} alt='No Found' /></label>
                     <div>
                         <h4>Temperature {city.main.temp}<img src={celsius} alt='No Found' /></h4>
                         <MinMaxTemp>

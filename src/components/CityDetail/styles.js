@@ -34,7 +34,7 @@ export const DetailCont = styled.section`
         margin-top: 0;
         background-color: #f5f5f5;
         width: 100%;
-        padding: 2em 0;
+        padding: 2em 0 1em 0;
     }
     h3, h4 {
         font-size: xx-large;
@@ -52,6 +52,7 @@ export const Coordinates = styled.div`
     flex-wrap: wrap;
     align-items: center;
     background-color: #fc5185;
+    padding-bottom: .5em;
 `
 export const WindCont = styled.div`
     display: flex;
@@ -62,6 +63,7 @@ export const WindCont = styled.div`
     height: 100%;
     flex-wrap: wrap;
     color: #f5f5f5;
+    padding-bottom: .5em;
     img {
         width: 2em;
         height: 2em;

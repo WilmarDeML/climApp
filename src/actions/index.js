@@ -1,4 +1,5 @@
 import { ADD_CITY, DELETE_CITY } from './actionTypes';
+import swal from 'sweetalert'
 
 const axios = require('axios');
 
@@ -11,7 +12,7 @@ export const buscarCiudad = city => (
             const ciudad = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
             await dispatch({ type: ADD_CITY, payload: ciudad.data })            
         } catch (error) {
-            alert(`${city} No Found!`)
+            swal(`${city} No Found!`, 'Type a valid name please!', 'error', {buttons: false, timer:3000})
         }	
     }
 )
