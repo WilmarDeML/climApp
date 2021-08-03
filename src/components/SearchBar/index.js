@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { buscarCiudad } from '../../actions'
 import { useDispatch } from 'react-redux'
 import { SerchCont, Input } from './styles'
+import swal from 'sweetalert'
 
 const SearchBar = () => {
 
@@ -10,7 +11,7 @@ const SearchBar = () => {
 
   const handleSubmit = e => {
       e.preventDefault()
-      ciudad ? dispatch(buscarCiudad(ciudad)) : alert('Type the name city please!')
+      ciudad ? dispatch(buscarCiudad(ciudad)) : swal('Type the name city please!', '', 'warning')
       asignarCiudad('')
   }
   return (
