@@ -66,5 +66,6 @@ export const BodyStyle = styled.div`
     label {
         color: #3fc1c9;
         padding-bottom: .5em;
+        text-transform: capitalize;
     }
 `
