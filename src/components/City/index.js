@@ -36,7 +36,7 @@ const City = ({ city }) => {
         </BodyStyle>
         <BodyStyle>
           <img src={`http://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`} width="80" height="80" alt="Img No Found" />
-          <label>There are {city.weather[0].description}</label>
+          <label>{city.weather[0].description}</label>
         </BodyStyle>
     </CityStyle>     
   ) 
