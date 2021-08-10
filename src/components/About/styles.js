@@ -17,8 +17,7 @@ export const MyDiv = styled.div`
     text-align: left;
     margin: 2em;
     border-radius: 3em;
-    padding: 0 2.5em;
-    
+    padding: 0 2.5em;    
     h1, a{
         width: fit-content;
         text-align: center;
@@ -29,12 +28,35 @@ export const MyDiv = styled.div`
             color: #3fc1c9;
         }
     }
-
     ul li{
         padding-bottom: 2em;
     }
-
     ol {
         padding-top: 1em;
+    }
+    
+    `
+export const MyHeader = styled.header`
+    display: flex;
+    align-items: center;
+    margin-top: -2em;
+    figure {
+        width: 6em;
+        height: 6em;
+        img {
+            border-radius: 50%;
+        }
+    }
+`
+
+export const MyUl = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 1.5em;
+    li {
+        margin-right: .5em;
+        width: 45%;
+        align-self: center;
     }
 `
