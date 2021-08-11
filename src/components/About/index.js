@@ -1,7 +1,10 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { MyCarousel, MyDiv, MyUl, MyHeader } from './styles'
-import { SiJavascript, SiHtml5, SiCss3, SiNodeDotJs, SiReact, SiRedux, SiPostgresql, SiMongodb, SiBootstrap, SiGithub, SiLinkedin } from 'react-icons/si'
+import { 
+	SiJavascript, SiHtml5, SiCss3, SiNodeDotJs,
+	SiReact, SiRedux, SiPostgresql, SiMongodb, SiBootstrap,
+	SiGithub, SiLinkedin, SiStyledComponents } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
 // const handleOnClickItem = () => alert('Click Item')
 // const handleOnClickThumb = () => alert('Click Thumb')
@@ -47,7 +50,7 @@ const  About = () => {
 				</MyDiv>
 				<p className="legend">About ClimApp</p>
 			</div>
-				<div>
+			<div>
 				<MyDiv>
 					<MyHeader>
 						<h1>
@@ -112,6 +115,39 @@ const  About = () => {
 					</MyUl>
 				</MyDiv>
 				<p className="legend">About Me</p>
+			</div>
+			<div>
+				<MyDiv>
+					<h1>
+						Technologies used
+					</h1>
+					<p>
+						Las tecnologías que usé para este proyecto fueron: 
+						<MyUl>
+							<li>
+								<h2>JavaScript <span><SiJavascript /></span></h2>
+							</li>
+							<li>
+								<h2>Node <span><SiNodeDotJs /></span></h2>
+							</li>
+							<li>
+								<h2>React <span><SiReact /></span></h2>
+							</li>
+							<li>
+								<h2>Redux <span><SiRedux /></span></h2>
+							</li>
+							<li>
+								<h2>Styled Components <span><SiStyledComponents /></span></h2>
+							</li>
+						</MyUl>
+					</p>
+					<MyUl>
+						<li>
+							<a href='https://github.com/WilmarDeML/clima'>Repository <SiGithub /></a>
+						</li>
+					</MyUl>
+				</MyDiv>
+				<p className="legend">About Technologies</p>
 			</div>
 		</MyCarousel>
 	)
