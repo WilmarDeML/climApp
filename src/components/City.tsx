@@ -1,15 +1,20 @@
-import React from 'react'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { deleteCity } from '../../actions'
-import { CityStyle, HeadCity, BodyStyle } from './styles'
-import Delete from '../../images/delete.png'
+import { deleteCity } from '../reducers/cityReducer'
+import { CityStyle, HeadCity, BodyStyle } from './cityStyles'
+import Delete from '/assets/delete.png'
+import { City as CityType } from '../reducers/cityReducer'
 
-const City = ({ city }) => {   
+type Props = {
+  city: CityType
+}
 
+const City = ({ city }: Props) => {
+    
+  console.log('city', city)
   const dispatch = useDispatch()
 
-  const handleOnclick = (idCity) => {
+  const handleOnclick = (idCity: string) => {
     dispatch(deleteCity(idCity))
   }
 
@@ -26,16 +31,18 @@ const City = ({ city }) => {
         <BodyStyle>
           <h4>Temperature</h4>
           <div>
-            <span>
+            <label>
               Min {city.main.temp_min}°C
-            </span>
-            <span>
+            </label>
+            <label>
               Max {city.main.temp_max}°C
-            </span>
+            </label>
           </div>
         </BodyStyle>
         <BodyStyle>
-          <img src={`http://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`} width="80" height="80" alt="Img No Found" />
+          <img src={`http://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`} 
+            width="80" height="80" alt="Img No Found"
+          />
           <label>{city.weather[0].description}</label>
         </BodyStyle>
     </CityStyle>     

@@ -1,16 +1,16 @@
-import React from 'react'
-import City from '../City'
+import City from './City'
+import { City as CityType } from '../reducers/cityReducer'
 import { useSelector } from 'react-redux'
-import { CitiesStyle } from './styles'
-import Landing from '../Landing'
+import { CitiesStyle } from './citiesStyles'
+import Landing from './Landing'
 
 const Cities = () => {
-  const cities = useSelector(state => state.listCities)
+  const cities = useSelector(({ cities }: any) => cities)
   if(cities.length){
     return (
       <CitiesStyle>
         {
-          cities.map(city => 
+          cities.map((city: CityType) => 
             <City
                 key={city.id}
                 city={city}
