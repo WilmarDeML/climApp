@@ -11,10 +11,9 @@ type Props = {
 
 const City = ({ city }: Props) => {
     
-  console.log('city', city)
   const dispatch = useDispatch()
 
-  const handleOnclick = (idCity: string) => {
+  const handleOnclick = (idCity: number) => {
     dispatch(deleteCity(idCity))
   }
 
