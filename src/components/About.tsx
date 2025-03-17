@@ -1,4 +1,3 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { MyDiv, MyUl, MyHeader, MyBody } from './aboutStyles'
 import { 
 	SiJavascript, SiHtml5, SiCss3, SiNodedotjs,
