@@ -4,7 +4,7 @@ export const CityStyle = styled.div`
     font-family: monospace;
     font-size: large;
     position: relative;
-    background-color: #364f6b;
+    background-color: #f5f5f5;
     width: 20em;
     margin: .8em .3em;
     opacity: .9;
@@ -13,15 +13,17 @@ export const CityStyle = styled.div`
 `
 
 export const HeadCity = styled.div`
-    background-color: #f5f5f5;
+    background-color: #364f6b;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    border-radius: 1em 1em 0 0;
+    border-top: .05em solid #f5f5f5;
 
     .link {
         margin-left: 3em;
         text-decoration: none;
-        color: #364f6b;
+        color: #f5f5f5;
 
         &:hover {
             opacity: .9;
@@ -32,7 +34,7 @@ export const HeadCity = styled.div`
     img {
         height: 5em;
         width: 5em;
-        background-color: #f5f5f5;
+        background-color: #364f6b;
         border-radius: 50%;
         &:hover {
             transform: rotate(-360deg);
@@ -52,7 +54,7 @@ export const BodyStyle = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    color: #f5f5f5;
+    color: #364f6b;
     margin-top: -1em;
     
     h4 {
