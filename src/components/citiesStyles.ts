@@ -5,5 +5,5 @@ export const CitiesStyle = styled.section`
     flex-wrap: wrap;
     background-color: #f5f5f5;
     justify-content: center;
-    width: fit-content;
+    width: 100%;
 `

@@ -3,7 +3,7 @@ import { createSlice, current } from '@reduxjs/toolkit'
 import cityService from '../services/cities'
 
 export interface City {
-  id: string
+  id: number
   name: string
   sys : {
     country: string
