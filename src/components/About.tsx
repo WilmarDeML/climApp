@@ -2,7 +2,8 @@ import { MyDiv, MyUl, MyHeader, MyBody } from './aboutStyles'
 import { 
 	SiJavascript, SiHtml5, SiCss3, SiNodedotjs,
 	SiReact, SiRedux, SiPostgresql, SiMongodb, SiBootstrap,
-	SiGithub, SiLinkedin, SiStyledcomponents } from 'react-icons/si'
+	SiGithub, SiLinkedin, SiStyledcomponents, SiVite, SiNpm, SiGit,
+  SiSlint, SiVercel } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
 import { Link } from "react-router-dom"
 
@@ -50,7 +51,7 @@ const  About = () => {
             Created By
           </h1>
           <figure>
-            <img src='/assets/profile.jpg' alt='My photo' width={100} />
+            <img src='/assets/profile.jpg' alt='My photo' width={150} />
           </figure>
         </MyHeader>
         <section>
@@ -58,34 +59,44 @@ const  About = () => {
           <a href='https://www.soyhenry.com/'> Henry.</a> Donde aprendí a implementar tecnologías como: 
           <MyUl>
             <li>
-              <label>JavaScript <span><SiJavascript /></span></label>
+              <label>JavaScript</label>
+              <span><SiJavascript /></span>
             </li>
             <li>
-              <label>HTML <span><SiHtml5 /></span></label>
+              <label>HTML</label>
+              <span><SiHtml5 /></span>
             </li>
             <li>
-              <label>CSS <span><SiCss3 /></span></label>
+              <label>CSS</label>
+              <span><SiCss3 /></span>
             </li>
             <li>
-              <label>Node <span><SiNodedotjs /></span></label>
+              <label>Node</label>
+              <span><SiNodedotjs /></span>
             </li>
             <li>
-              <label>React <span><SiReact /></span></label>
+              <label>React</label>
+              <span><SiReact /></span>
             </li>
             <li>
-              <label>Redux <span><SiRedux /></span></label>
+              <label>Redux</label>
+              <span><SiRedux /></span>
             </li>
             <li>
-              <label>SQL <span><AiOutlineConsoleSql /></span></label>
+              <label>SQL</label>
+              <span><AiOutlineConsoleSql /></span>
             </li>
             <li>
-              <label>PostgreSql <span><SiPostgresql /></span></label>
+              <label>PostgreSql</label>
+              <span><SiPostgresql /></span>
             </li>
             <li>
-              <label>MongoDb <span><SiMongodb /></span></label>
+              <label>MongoDb</label>
+              <span><SiMongodb /></span>
             </li>
             <li>
-              <label>Bootstrap <span><SiBootstrap /></span></label>
+              <label>Bootstrap</label>
+              <span><SiBootstrap /></span>
             </li>
           </MyUl>
           Diseño esta aplicación con la intensión de continuar practicando lo que he aprendido hasta ahora,
@@ -115,19 +126,44 @@ const  About = () => {
           Las tecnologías que usé para este proyecto fueron: 
           <MyUl>
             <li>
-              <h2>JavaScript <span><SiJavascript /></span></h2>
+              <h3>Vite</h3>
+              <span><SiVite /></span>
             </li>
             <li>
-              <h2>Node <span><SiNodedotjs /></span></h2>
+              <h3>JavaScript</h3>
+              <span><SiJavascript /></span>
             </li>
             <li>
-              <h2>React <span><SiReact /></span></h2>
+              <h3>Node</h3>
+              <span><SiNodedotjs /></span>
             </li>
             <li>
-              <h2>Redux <span><SiRedux /></span></h2>
+              <h3>React</h3>
+              <span><SiReact /></span>
             </li>
             <li>
-              <h2>Styled Components <span><SiStyledcomponents /></span></h2>
+              <h3>Redux</h3>
+              <span><SiRedux /></span>
+            </li>
+            <li>
+              <h3>Styled Components</h3>
+              <span><SiStyledcomponents /></span>
+            </li>
+            <li>
+              <h3>Git</h3>
+              <span><SiGit /></span>
+            </li>
+            <li>
+              <h3>NPM</h3>
+              <span><SiNpm /></span>
+            </li>
+            <li>
+              <h3>Slint</h3>
+              <span><SiSlint /></span>
+            </li>
+            <li>
+              <h3>Vercel</h3>
+              <span><SiVercel /></span>
             </li>
           </MyUl>
         </section>
