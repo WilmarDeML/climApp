@@ -62,11 +62,10 @@ export const MyDiv = styled.div`
 `
 export const MyHeader = styled.header`
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-start;
     margin-top: 0;
     figure {
-        margin-left: auto;
-        margin-right: auto;
         img {
             border-radius: 50%;
         }
@@ -75,12 +74,22 @@ export const MyHeader = styled.header`
 
 export const MyUl = styled.ul`
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     list-style: none;
     margin-top: 1.5em;
+    padding: 0;
+    gap: 1em;
     li {
-        margin-right: .5em;
-        width: 45%;
-        align-self: center;
+        display: flex;
+        justify-content: center;
+        gap: .2em;
+
+        span {
+            align-self: center;
+            font-size: xx-large;
+            margin-left: .1em;
+            color: #3fc1c9;
+        }
     }
 `
